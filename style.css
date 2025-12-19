@@ -43,6 +43,7 @@ ol {
 a {
     text-decoration: none;
     outline: none;
+    color: inherit;
 }
 
 /* ------Contenedor del ancho de la pagina--------- */
@@ -87,6 +88,7 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 10;
 }
 
 .header_layout {
@@ -390,6 +392,8 @@ h3 {
 {
     max-width: 511px;
     max-height: 350px;
+    transition: transform .4s ease;
+    transform-origin: 50% 50%;
 }
 .payment-options-text-action .btn-medium
 {
@@ -399,4 +403,63 @@ h3 {
 .btn-primary.hover-strong:hover {
     background-color: var(--color-primary-900);
     color: var(--color-neutral-100);
+}
+
+.payment-options--image:hover
+{
+    transform: scale(1.05);
+}
+
+/* ----FOOTER---- */
+.footer
+{
+    background-color: var(--color-neutral-100);
+    width: 100%;
+}
+.footer__layout
+{
+    display: flex;
+    flex-direction: column;
+    max-width: 1022px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 32px 0;
+}
+.footer__logo
+{
+    height: 44px;
+    width: 46px;
+}
+.footer__nav
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 8px;
+}
+.footer__group
+{
+    flex: 1;
+    margin-right: 24px;
+}
+.footer__group-title
+{
+    font-size: 16px;
+    line-height: 1.5rem;
+    font-weight: 700;
+}
+.footer__nav-item
+{
+    margin: 8px 0; 
+}
+.footer__nav-list a
+{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+/* ----HOVER FOOTER---- */
+.footer__nav-list a:hover 
+{
+    text-decoration: underline;
+    color: var(--color-primary-800);
 }
