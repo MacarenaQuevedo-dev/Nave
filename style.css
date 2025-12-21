@@ -488,6 +488,9 @@ h3 {
         font-size: 24px;
         background: none;
         border: none; 
+        color: var(--color-neutral-700);
+        font-weight: 700;
+            
     }
     .icon__mobile-container 
     {
